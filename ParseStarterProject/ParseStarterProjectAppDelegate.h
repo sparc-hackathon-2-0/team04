@@ -4,6 +4,7 @@
 
 @class ParseStarterProjectViewController;
 @class UserSettingsTableViewController;
+@class SuppliesTableViewController;
 
 
 @interface ParseStarterProjectAppDelegate : NSObject <UIApplicationDelegate> {
