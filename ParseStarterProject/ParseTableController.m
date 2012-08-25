@@ -116,7 +116,7 @@
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
     
-    [query orderByAscending:@"dateOfYardsale"];
+    [query orderByAscending:@"createdAt"];
     
     return query;
 }
@@ -134,11 +134,11 @@
     }
     
     // Configure the cell
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"cccc L/d/y"];
+    //NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //[dateFormatter setDateFormat:@"cccc L/d/y"];
             
-    cell.textLabel.text = [dateFormatter stringFromDate:[object objectForKey:@"dateOfYardsale"]];
-    cell.detailTextLabel.text = [object objectForKey:@"street_address"];
+    //cell.textLabel.text = [dateFormatter stringFromDate:[object objectForKey:@"title"]];
+    cell.textLabel.text = [object objectForKey:@"title"];
     
     return cell;
 }

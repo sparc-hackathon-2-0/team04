@@ -29,7 +29,7 @@
     
     // Override point for customization after application launch.
     
-    ParseTableController *controller1 = [[ParseTableController alloc] initWithClassName:@"DIYCategories"];
+    ParseTableController *controller1 = [[ParseTableController alloc] initWithClassName:@"DIYcategories"];
     ParseTableController *controller2 = [[ParseTableController alloc] initWithClassName:@"Yardsaless"];
     ParseTableController *controller3 = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
     UIViewController *controller4 = [[UIViewController alloc] init];
@@ -37,13 +37,20 @@
     
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller1];
-    UINavigationController *navController2 = [[UINavigationController alloc]initWithRootViewController:controller2];
+    UINavigationController *ideaNavController = [[UINavigationController alloc]initWithRootViewController:controller1];
+    ideaNavController.navigationBar.tintColor = [UIColor blackColor];
+    ideaNavController.title = @"Ideas";
+    ideaNavController.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Ideas" image:[UIImage imageNamed:@"84-lightbulb.png"] tag:1];
+    
+    UINavigationController *findToolsNav = [[UINavigationController alloc]initWithRootViewController:controller2];
+    ideaNavController.navigationBar.tintColor = [UIColor blackColor];
+    findToolsNav.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Find Tools" image:[UIImage imageNamed:@"181-hammer.png"] tag:2];
+    
     UINavigationController *navController3 = [[UINavigationController alloc]initWithRootViewController:controller3];
     UINavigationController *navController4 = [[UINavigationController alloc]initWithRootViewController:controller4];
     
-    NSArray *viewControllers = [NSArray arrayWithObjects:navController, navController2, navController3, navController4, nil];
-    [navController release];
+    NSArray *viewControllers = [NSArray arrayWithObjects:ideaNavController, findToolsNav, navController3, navController4, nil];
+    //[navController release];
     
     [tabBarController setViewControllers:viewControllers];
      
