@@ -6,10 +6,10 @@
 //
 //
 
-#import "DIYCategoriesTableViewController.h"
+#import "DIYLessonsViewController.h"
 #import "Parse/Parse.h"
 
-@implementation DIYCategoriesTableViewController
+@implementation DIYLessonsViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -18,7 +18,7 @@
         // Custom the table
         
         // The className to query on
-        self.className = @"DIYcategories";
+        self.className = @"DIYlessons";
         
         // The key of the PFObject to display in the label of the default cell style
         //self.
@@ -225,9 +225,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog([NSString stringWithFormat:@"row: %d", indexPath.row ]);
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
-    
-    
 }
 
 @end
