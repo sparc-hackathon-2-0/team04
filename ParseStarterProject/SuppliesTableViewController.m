@@ -44,12 +44,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    //Tried some logo code below
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Anyone have?" style:UIBarButtonItemStylePlain target:self action:@selector(refreshPropertyList:)];
+    [anotherButton setTintColor:[UIColor grayColor]];
+    self.navigationItem.rightBarButtonItem = anotherButton;
+    [anotherButton release];
     
-//    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
-//     imageView.contentMode = UIViewContentModeScaleAspectFit;
-//    self.navigationItem.titleView = imageView;
+    //self.navigationItem.title = @"Supplies";
+
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-small.png"]];
+
+    self.navigationItem.titleView = imageView;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
