@@ -37,7 +37,7 @@
     //controller1.pullToRefreshEnabled = NO;
     
     SuppliesTableViewController *controller2 = [[SuppliesTableViewController alloc] initWithClassName:@"Supplies"];
-    UIViewController *controller4 = [[UIViewController alloc] init];
+    UserSettingsTableViewController *controller4 = [[UserSettingsTableViewController alloc] init];
     //Setup tab bar controller
        
     DIYTabViewController *tabBarController = [[DIYTabViewController alloc]init];
