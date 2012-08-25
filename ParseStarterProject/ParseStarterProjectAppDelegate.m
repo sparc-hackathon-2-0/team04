@@ -31,6 +31,11 @@
     // Override point for customization after application launch.
     
     DIYCategoriesTableViewController *controller1 = [[DIYCategoriesTableViewController alloc] initWithClassName:@"DIYcategories"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-small.png"]];
+    
+    //controller1.titleView = imageView;
+    //controller1.pullToRefreshEnabled = NO;
+    
     SuppliesTableViewController *controller2 = [[SuppliesTableViewController alloc] initWithClassName:@"Supplies"];
     UIViewController *controller4 = [[UIViewController alloc] init];
     //Setup tab bar controller
