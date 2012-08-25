@@ -8,6 +8,6 @@
 
 #import <Parse/Parse.h>
 
-@interface ParseTableController : PFQueryTableViewController
+@interface DIYCategoriesTableViewController : PFQueryTableViewController
 
 @end

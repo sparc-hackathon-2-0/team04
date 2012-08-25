@@ -6,10 +6,10 @@
 //
 //
 
-#import "ParseTableController.h"
+#import "DIYCategoriesTableViewController.h"
 #import "Parse/Parse.h"
 
-@implementation ParseTableController
+@implementation DIYCategoriesTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -147,6 +147,7 @@
     else {
         cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Lessons", numLessons];
     }
+    
     
     
     return cell;
