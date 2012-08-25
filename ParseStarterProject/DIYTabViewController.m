@@ -64,6 +64,10 @@
     [super viewDidAppear:animated];
 }
 
+- (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
+    [self dismissModalViewControllerAnimated:YES]; // Dismiss the PFSignUpViewController
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
