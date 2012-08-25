@@ -7,6 +7,7 @@
 //
 
 #import "ParseTableController.h"
+#import "Parse/Parse.h"
 
 @implementation ParseTableController
 
@@ -40,7 +41,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

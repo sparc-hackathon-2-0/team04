@@ -21,7 +21,7 @@
     // [PFFacebookUtils initializeWithApplicationId:@"your_facebook_app_id"];
     // ****************************************************************************
     
-    [PFUser enableAutomaticUser];
+    //[PFUser enableAutomaticUser];
     PFACL *defaultACL = [PFACL ACL];
     // Optionally enable public read access by default.
     // [defaultACL setPublicReadAccess:YES];
@@ -29,7 +29,7 @@
     
     // Override point for customization after application launch.
     
-    ParseTableController *controller1 = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
+    ParseTableController *controller1 = [[ParseTableController alloc] initWithClassName:@"DIYCategories"];
     ParseTableController *controller2 = [[ParseTableController alloc] initWithClassName:@"Yardsaless"];
     ParseTableController *controller3 = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
     UIViewController *controller4 = [[UIViewController alloc] init];
@@ -50,9 +50,9 @@
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     
-    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
-                                                    UIRemoteNotificationTypeAlert|
-                                                    UIRemoteNotificationTypeSound];
+    //[application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+    //                                                UIRemoteNotificationTypeAlert|
+    //                                                UIRemoteNotificationTypeSound];
     return YES;
 }
 
