@@ -33,8 +33,9 @@
     DIYCategoriesTableViewController *controller1 = [[DIYCategoriesTableViewController alloc] initWithClassName:@"DIYcategories"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-small.png"]];
     
-    //controller1.titleView = imageView;
-    //controller1.pullToRefreshEnabled = NO;
+    controller1.navigationItem.titleView = imageView;
+    
+    controller1.pullToRefreshEnabled = NO;
     
     SuppliesTableViewController *controller2 = [[SuppliesTableViewController alloc] initWithClassName:@"Supplies"];
     UserSettingsTableViewController *controller4 = [[UserSettingsTableViewController alloc] init];
