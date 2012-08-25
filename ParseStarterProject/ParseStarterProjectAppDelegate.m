@@ -35,7 +35,7 @@
     ParseTableController *controller3 = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
     UIViewController *controller4 = [[UIViewController alloc] init];
     //Setup tab bar controller
-    
+       
     DIYTabViewController *tabBarController = [[DIYTabViewController alloc]init];
     
     UINavigationController *ideaNavController = [[UINavigationController alloc]initWithRootViewController:controller1];

@@ -68,6 +68,10 @@
     [self dismissModalViewControllerAnimated:YES]; // Dismiss the PFSignUpViewController
 }
 
+- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];

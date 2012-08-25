@@ -116,7 +116,7 @@
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
     
-    [query orderByAscending:@"createdAt"];
+    [query orderByAscending:@"title"];
     
     return query;
 }
@@ -133,12 +133,21 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    // Configure the cell
-    //NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    //[dateFormatter setDateFormat:@"cccc L/d/y"];
-            
+    PFQuery *query = [PFQuery queryWithClassName:@"DIYlesson"];
+    [query whereKey:@"parent" equalTo:object];
+    
+    int numLessons = (int)[query countObjects];
+    
     //cell.textLabel.text = [dateFormatter stringFromDate:[object objectForKey:@"title"]];
     cell.textLabel.text = [object objectForKey:@"title"];
+    
+    if (numLessons == 1) {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Lesson", numLessons];
+    }
+    else {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Lessons", numLessons];
+    }
+    
     
     return cell;
 }
