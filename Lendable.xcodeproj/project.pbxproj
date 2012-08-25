@@ -48,6 +48,7 @@
 		764E0FFE15E926070068252B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0FFB15E926070068252B /* LoginViewController.m */; };
 		764E0FFF15E926070068252B /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0FFD15E926070068252B /* NewUserViewController.m */; };
 		764E100215E9266B0068252B /* just_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764E100115E9266B0068252B /* just_background@2x.png */; };
+		76986FF015E968450052EC45 /* DIYLessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76986FEF15E968450052EC45 /* DIYLessonsViewController.m */; };
 		76DB681715E94F2D00E1CDC6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681615E94F2D00E1CDC6 /* icon.png */; };
 		76DB681A15E94FA500E1CDC6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681915E94FA500E1CDC6 /* icon@2x.png */; };
 		EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */; };
@@ -112,6 +113,8 @@
 		764E0FFC15E926070068252B /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
 		764E0FFD15E926070068252B /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
 		764E100115E9266B0068252B /* just_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "just_background@2x.png"; sourceTree = "<group>"; };
+		76986FEE15E968450052EC45 /* DIYLessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYLessonsViewController.h; sourceTree = "<group>"; };
+		76986FEF15E968450052EC45 /* DIYLessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYLessonsViewController.m; sourceTree = "<group>"; };
 		76DB681615E94F2D00E1CDC6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		76DB681915E94FA500E1CDC6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		EC28D04415E960A3004EA7D9 /* SuppliesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuppliesTableViewController.h; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 		764E0FD915E9227B0068252B /* DIY Lessons */ = {
 			isa = PBXGroup;
 			children = (
+				76986FEE15E968450052EC45 /* DIYLessonsViewController.h */,
+				76986FEF15E968450052EC45 /* DIYLessonsViewController.m */,
 			);
 			name = "DIY Lessons";
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				7608FF4B15E937D0004971BF /* DIYTabViewController.m in Sources */,
 				EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */,
 				EC28D05315E96EB9004EA7D9 /* AddItemViewController.m in Sources */,
+				76986FF015E968450052EC45 /* DIYLessonsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,10 @@
 //
 //
 
-#import "DIYCategoriesTableViewController.h"
 #import "DIYLessonsViewController.h"
 #import "Parse/Parse.h"
 
-@implementation DIYCategoriesTableViewController
+@implementation DIYLessonsViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -19,14 +18,14 @@
         // Custom the table
         
         // The className to query on
-        self.className = @"DIYcategories";
+        self.className = @"DIYlessons";
         
         // The key of the PFObject to display in the label of the default cell style
         //self.
-        self.title = @"text";
+        self.title = @"title";
         
         // Whether the built-in pull-to-refresh is enabled
-        self.pullToRefreshEnabled = NO;
+        self.pullToRefreshEnabled = YES;
         
         // Whether the built-in pagination is enabled
         self.paginationEnabled = YES;
@@ -34,6 +33,34 @@
         // The number of objects to show per page
         self.objectsPerPage = 10;
     }
+    return self;
+}
+
+-(id) initWithIndex:(NSIndexPath*)index
+{
+    self = [super initWithClassName:@"DIYlesson"];
+    
+    if (self) {
+        int row = index.row;
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"DIYcategories"];
+        [query orderByAscending:@"title"];
+        
+        NSArray *categories = [query findObjects];
+        
+        PFObject *category = [categories objectAtIndex:row];
+        
+        self.title = [category objectForKey:@"title"];
+        self.category = category;
+        self.className = @"DIYlesson";
+        
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
+        
+        // The number of objects to show per page
+        self.objectsPerPage = 10;
+    }
+    
     return self;
 }
 
@@ -109,7 +136,11 @@
 // Override to customize what kind of query to perform on the class. The default is to query for
 // all objects ordered by createdAt descending.
 - (PFQuery *)queryForTable {
+    
+    NSObject *category = self.category;
+    
     PFQuery *query = [PFQuery queryWithClassName:self.className];
+    [query whereKey:@"parent" equalTo:category];
     
     // If no objects are loaded in memory, we look to the cache first to fill the table
     // and then subsequently do a query against the network.
@@ -117,7 +148,7 @@
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
     
-    [query orderByAscending:@"title"];
+    [query orderByAscending:@"createdAt"];
     
     return query;
 }
@@ -134,22 +165,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    PFQuery *query = [PFQuery queryWithClassName:@"DIYlesson"];
-    [query whereKey:@"parent" equalTo:object];
-    
-    int numLessons = (int)[query countObjects];
-    
-    //cell.textLabel.text = [dateFormatter stringFromDate:[object objectForKey:@"title"]];
     cell.textLabel.text = [object objectForKey:@"title"];
-    
-    if (numLessons == 1) {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Lesson", numLessons];
-    }
-    else {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Lessons", numLessons];
-    }
-    
-    
     
     return cell;
 }
@@ -224,13 +240,10 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DIYLessonsViewController *detailViewController = [[[DIYLessonsViewController alloc] initWithIndex:indexPath] autorelease];
-    // Push it onto the top of the navigation controller's stack
-    [[self navigationController] pushViewController:detailViewController animated:YES];
-    
-    [aTableView deselectRowAtIndexPath:indexPath animated:FALSE];
+    NSLog([NSString stringWithFormat:@"row: %d", indexPath.row ]);
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 @end
