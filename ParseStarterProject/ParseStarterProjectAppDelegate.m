@@ -4,6 +4,7 @@
 #import "ParseStarterProjectAppDelegate.h"
 #import "ParseStarterProjectViewController.h"
 #import "ParseTableController.h"
+#import "DIYTabViewController.h"
 
 @implementation ParseStarterProjectAppDelegate
 
@@ -35,7 +36,7 @@
     UIViewController *controller4 = [[UIViewController alloc] init];
     //Setup tab bar controller
     
-    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    DIYTabViewController *tabBarController = [[DIYTabViewController alloc]init];
     
     UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller1];
     UINavigationController *navController2 = [[UINavigationController alloc]initWithRootViewController:controller2];
@@ -46,7 +47,7 @@
     [navController release];
     
     [tabBarController setViewControllers:viewControllers];
-     
+      
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     
