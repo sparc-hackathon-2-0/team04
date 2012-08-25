@@ -4,6 +4,7 @@
 #import "ParseStarterProjectAppDelegate.h"
 #import "ParseStarterProjectViewController.h"
 #import "ParseTableController.h"
+#import "DIYTabViewController.h"
 
 @implementation ParseStarterProjectAppDelegate
 
@@ -35,7 +36,7 @@
     UIViewController *controller4 = [[UIViewController alloc] init];
     //Setup tab bar controller
     
-    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    DIYTabViewController *tabBarController = [[DIYTabViewController alloc]init];
     
     UINavigationController *ideaNavController = [[UINavigationController alloc]initWithRootViewController:controller1];
     ideaNavController.navigationBar.tintColor = [UIColor blackColor];
@@ -53,7 +54,7 @@
     //[navController release];
     
     [tabBarController setViewControllers:viewControllers];
-     
+      
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     
