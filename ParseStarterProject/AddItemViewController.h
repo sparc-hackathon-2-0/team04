@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import <Parse/Parse.h>
 
 @interface AddItemViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UITextView *descriptionTextField;

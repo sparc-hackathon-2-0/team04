@@ -215,6 +215,7 @@
     NSLog(@"Button Pressed!");
     AddItemViewController *vc = [[AddItemViewController alloc]init];
     [self.navigationController  presentModalViewController:vc animated:YES  ];
+    
     [vc release];
 }
 
