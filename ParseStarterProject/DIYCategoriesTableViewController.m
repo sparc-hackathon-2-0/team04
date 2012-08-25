@@ -7,6 +7,7 @@
 //
 
 #import "DIYCategoriesTableViewController.h"
+#import "DIYLessonsViewController.h"
 #import "Parse/Parse.h"
 
 @implementation DIYCategoriesTableViewController
@@ -223,11 +224,13 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    DIYLessonsViewController *detailViewController = [[[DIYLessonsViewController alloc] initWithIndex:indexPath] autorelease];
+    // Push it onto the top of the navigation controller's stack
+    [[self navigationController] pushViewController:detailViewController animated:YES];
     
-    
+    [aTableView deselectRowAtIndexPath:indexPath animated:FALSE];
 }
 
 @end

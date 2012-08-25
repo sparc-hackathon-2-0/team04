@@ -22,10 +22,10 @@
         
         // The key of the PFObject to display in the label of the default cell style
         //self.
-        self.title = @"text";
+        self.title = @"title";
         
         // Whether the built-in pull-to-refresh is enabled
-        self.pullToRefreshEnabled = NO;
+        self.pullToRefreshEnabled = YES;
         
         // Whether the built-in pagination is enabled
         self.paginationEnabled = YES;
@@ -33,6 +33,28 @@
         // The number of objects to show per page
         self.objectsPerPage = 10;
     }
+    return self;
+}
+
+-(id) initWithIndex:(NSIndexPath*)index
+{
+    self = [super initWithClassName:@"DIYlesson"];
+    
+    if (self) {
+        int row = index.row;
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"DIYcategories"];
+        [query orderByAscending:@"title"];
+        
+        NSArray *categories = [query findObjects];
+        
+        PFObject *category = [categories objectAtIndex:row];
+        
+        self.title = [category objectForKey:@"title"];
+        self.category = category;
+        self.className = @"DIYlessons";
+    }
+    
     return self;
 }
 
@@ -108,7 +130,11 @@
 // Override to customize what kind of query to perform on the class. The default is to query for
 // all objects ordered by createdAt descending.
 - (PFQuery *)queryForTable {
-    PFQuery *query = [PFQuery queryWithClassName:self.className];
+    
+    NSObject *category = self.category;
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"DIYlesson"];
+    [query whereKey:@"parent" equalTo:category];
     
     // If no objects are loaded in memory, we look to the cache first to fill the table
     // and then subsequently do a query against the network.
@@ -116,7 +142,7 @@
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
     
-    [query orderByAscending:@"title"];
+    [query orderByAscending:@"createdAt"];
     
     return query;
 }
@@ -133,22 +159,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    PFQuery *query = [PFQuery queryWithClassName:@"DIYlesson"];
-    [query whereKey:@"parent" equalTo:object];
-    
-    int numLessons = (int)[query countObjects];
-    
-    //cell.textLabel.text = [dateFormatter stringFromDate:[object objectForKey:@"title"]];
     cell.textLabel.text = [object objectForKey:@"title"];
-    
-    if (numLessons == 1) {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Lesson", numLessons];
-    }
-    else {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Lessons", numLessons];
-    }
-    
-    
     
     return cell;
 }
