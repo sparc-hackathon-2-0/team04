@@ -52,7 +52,13 @@
         
         self.title = [category objectForKey:@"title"];
         self.category = category;
-        self.className = @"DIYlessons";
+        self.className = @"DIYlesson";
+        
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
+        
+        // The number of objects to show per page
+        self.objectsPerPage = 10;
     }
     
     return self;
@@ -133,7 +139,7 @@
     
     NSObject *category = self.category;
     
-    PFQuery *query = [PFQuery queryWithClassName:@"DIYlesson"];
+    PFQuery *query = [PFQuery queryWithClassName:self.className];
     [query whereKey:@"parent" equalTo:category];
     
     // If no objects are loaded in memory, we look to the cache first to fill the table
