@@ -38,10 +38,11 @@
 		764E0FF315E9246D0068252B /* AddWantedItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FF215E9246C0068252B /* AddWantedItemViewController.xib */; };
 		764E0FF515E9248B0068252B /* WantedItemsByOthersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FF415E9248B0068252B /* WantedItemsByOthersViewController.xib */; };
 		764E0FF715E9249D0068252B /* WantedItemByOtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FF615E9249C0068252B /* WantedItemByOtherViewController.xib */; };
-		764E0FF915E924B60068252B /* UserSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FF815E924B60068252B /* UserSettingsViewController.xib */; };
 		764E0FFE15E926070068252B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0FFB15E926070068252B /* LoginViewController.m */; };
 		764E0FFF15E926070068252B /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0FFD15E926070068252B /* NewUserViewController.m */; };
 		764E100215E9266B0068252B /* just_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764E100115E9266B0068252B /* just_background@2x.png */; };
+		EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */; };
+		EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,12 +83,14 @@
 		764E0FF215E9246C0068252B /* AddWantedItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWantedItemViewController.xib; sourceTree = "<group>"; };
 		764E0FF415E9248B0068252B /* WantedItemsByOthersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WantedItemsByOthersViewController.xib; sourceTree = "<group>"; };
 		764E0FF615E9249C0068252B /* WantedItemByOtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WantedItemByOtherViewController.xib; sourceTree = "<group>"; };
-		764E0FF815E924B60068252B /* UserSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingsViewController.xib; sourceTree = "<group>"; };
 		764E0FFA15E926070068252B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		764E0FFB15E926070068252B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		764E0FFC15E926070068252B /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
 		764E0FFD15E926070068252B /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
 		764E100115E9266B0068252B /* just_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "just_background@2x.png"; sourceTree = "<group>"; };
+		EC82905815E9336F007A2732 /* UserSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsTableViewController.h; sourceTree = "<group>"; };
+		EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsTableViewController.m; sourceTree = "<group>"; };
+		EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingsTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +264,9 @@
 		764E0FDE15E923140068252B /* DIY Settings */ = {
 			isa = PBXGroup;
 			children = (
+				EC82905815E9336F007A2732 /* UserSettingsTableViewController.h */,
+				EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */,
+				EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */,
 			);
 			name = "DIY Settings";
 			sourceTree = "<group>";
@@ -293,7 +299,6 @@
 				764E0FF215E9246C0068252B /* AddWantedItemViewController.xib */,
 				764E0FF415E9248B0068252B /* WantedItemsByOthersViewController.xib */,
 				764E0FF615E9249C0068252B /* WantedItemByOtherViewController.xib */,
-				764E0FF815E924B60068252B /* UserSettingsViewController.xib */,
 			);
 			name = "XIB Resources";
 			sourceTree = "<group>";
@@ -371,8 +376,8 @@
 				764E0FF315E9246D0068252B /* AddWantedItemViewController.xib in Resources */,
 				764E0FF515E9248B0068252B /* WantedItemsByOthersViewController.xib in Resources */,
 				764E0FF715E9249D0068252B /* WantedItemByOtherViewController.xib in Resources */,
-				764E0FF915E924B60068252B /* UserSettingsViewController.xib in Resources */,
 				764E100215E9266B0068252B /* just_background@2x.png in Resources */,
+				EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +394,7 @@
 				764E0EF315E311720068252B /* ParseTableController.m in Sources */,
 				764E0FFE15E926070068252B /* LoginViewController.m in Sources */,
 				764E0FFF15E926070068252B /* NewUserViewController.m in Sources */,
+				EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,6 +3,8 @@
 #import <UIKit/UIKit.h>
 
 @class ParseStarterProjectViewController;
+@class UserSettingsTableViewController;
+
 
 @interface ParseStarterProjectAppDelegate : NSObject <UIApplicationDelegate> {
 

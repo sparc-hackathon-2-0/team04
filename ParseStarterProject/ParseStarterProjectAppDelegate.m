@@ -29,9 +29,25 @@
     
     // Override point for customization after application launch.
     
-    ParseTableController *controller = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
+    ParseTableController *controller1 = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
+    ParseTableController *controller2 = [[ParseTableController alloc] initWithClassName:@"Yardsaless"];
+    ParseTableController *controller3 = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
+    UIViewController *controller4 = [[UIViewController alloc] init];
+    //Setup tab bar controller
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller1];
+    UINavigationController *navController2 = [[UINavigationController alloc]initWithRootViewController:controller2];
+    UINavigationController *navController3 = [[UINavigationController alloc]initWithRootViewController:controller3];
+    UINavigationController *navController4 = [[UINavigationController alloc]initWithRootViewController:controller4];
+    
+    NSArray *viewControllers = [NSArray arrayWithObjects:navController, navController2, navController3, navController4, nil];
+    [navController release];
+    
+    [tabBarController setViewControllers:viewControllers];
      
-    self.window.rootViewController = controller;
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
