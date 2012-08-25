@@ -26,6 +26,13 @@
 		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
 		4998650515BF305000803E05 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4998650415BF305000803E05 /* StoreKit.framework */; };
 		743D7B6D157DA60100084B67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743D7B6C157DA60100084B67 /* CoreGraphics.framework */; };
+		7608FF4B15E937D0004971BF /* DIYTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7608FF4915E937D0004971BF /* DIYTabViewController.m */; };
+		7608FF4C15E937D0004971BF /* DIYTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF4A15E937D0004971BF /* DIYTabViewController.xib */; };
+		7608FF4F15E94379004971BF /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF4E15E94379004971BF /* Logo.png */; };
+		7608FF5115E94891004971BF /* SignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF5015E94891004971BF /* SignUp.png */; };
+		7608FF5315E94951004971BF /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF5215E94951004971BF /* Login.png */; };
+		7608FF5515E949C9004971BF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF5415E949C9004971BF /* Default@2x.png */; };
+		7608FF5715E949F9004971BF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF5615E949F9004971BF /* Default.png */; };
 		764E0EF315E311720068252B /* ParseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0EF215E311720068252B /* ParseTableController.m */; };
 		764E0FE315E9239C0068252B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE215E9239C0068252B /* LoginViewController.xib */; };
 		764E0FE515E923B30068252B /* NewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE415E923B30068252B /* NewUserViewController.xib */; };
@@ -70,6 +77,14 @@
 		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4998650415BF305000803E05 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		743D7B6C157DA60100084B67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7608FF4815E937D0004971BF /* DIYTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYTabViewController.h; sourceTree = "<group>"; };
+		7608FF4915E937D0004971BF /* DIYTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYTabViewController.m; sourceTree = "<group>"; };
+		7608FF4A15E937D0004971BF /* DIYTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYTabViewController.xib; sourceTree = "<group>"; };
+		7608FF4E15E94379004971BF /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		7608FF5015E94891004971BF /* SignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUp.png; sourceTree = "<group>"; };
+		7608FF5215E94951004971BF /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		7608FF5415E949C9004971BF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7608FF5615E949F9004971BF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		764E0EF115E311720068252B /* ParseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTableController.h; sourceTree = "<group>"; };
 		764E0EF215E311720068252B /* ParseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseTableController.m; sourceTree = "<group>"; };
 		764E0FE215E9239C0068252B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -119,6 +134,8 @@
 		09ABC06213A1D52D009C3FCF = {
 			isa = PBXGroup;
 			children = (
+				7608FF5615E949F9004971BF /* Default.png */,
+				7608FF5415E949C9004971BF /* Default@2x.png */,
 				4998650415BF305000803E05 /* StoreKit.framework */,
 				09ABC07713A1D52D009C3FCF /* ParseStarterProject */,
 				09ABC07013A1D52D009C3FCF /* Frameworks */,
@@ -197,6 +214,11 @@
 				764E0FD815E922740068252B /* DIY Search */,
 				764E0FD715E922620068252B /* DIY Categories */,
 				764E0FD615E922560068252B /* User Creation/Login */,
+				7608FF4815E937D0004971BF /* DIYTabViewController.h */,
+				7608FF4915E937D0004971BF /* DIYTabViewController.m */,
+				7608FF5215E94951004971BF /* Login.png */,
+				7608FF5015E94891004971BF /* SignUp.png */,
+				7608FF4A15E937D0004971BF /* DIYTabViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -306,6 +328,7 @@
 		764E100015E926440068252B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7608FF4E15E94379004971BF /* Logo.png */,
 				764E100115E9266B0068252B /* just_background@2x.png */,
 			);
 			name = Assets;
@@ -378,6 +401,12 @@
 				764E0FF715E9249D0068252B /* WantedItemByOtherViewController.xib in Resources */,
 				764E100215E9266B0068252B /* just_background@2x.png in Resources */,
 				EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */,
+				7608FF4C15E937D0004971BF /* DIYTabViewController.xib in Resources */,
+				7608FF4F15E94379004971BF /* Logo.png in Resources */,
+				7608FF5115E94891004971BF /* SignUp.png in Resources */,
+				7608FF5315E94951004971BF /* Login.png in Resources */,
+				7608FF5515E949C9004971BF /* Default@2x.png in Resources */,
+				7608FF5715E949F9004971BF /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +424,7 @@
 				764E0FFE15E926070068252B /* LoginViewController.m in Sources */,
 				764E0FFF15E926070068252B /* NewUserViewController.m in Sources */,
 				EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */,
+				7608FF4B15E937D0004971BF /* DIYTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
