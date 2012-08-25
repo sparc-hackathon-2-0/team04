@@ -53,6 +53,8 @@
 		EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */; };
 		EC28D04915E9654C004EA7D9 /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = EC28D04815E9654C004EA7D9 /* 111-user.png */; };
 		EC28D04B15E9691B004EA7D9 /* Logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = EC28D04A15E9691B004EA7D9 /* Logo-small.png */; };
+		EC28D05315E96EB9004EA7D9 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28D05115E96EB9004EA7D9 /* AddItemViewController.m */; };
+		EC28D05415E96EB9004EA7D9 /* AddItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC28D05215E96EB9004EA7D9 /* AddItemViewController.xib */; };
 		EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */; };
 		EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */; };
 		EC82905F15E94A7D007A2732 /* 84-lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82905E15E94A7D007A2732 /* 84-lightbulb.png */; };
@@ -116,6 +118,9 @@
 		EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuppliesTableViewController.m; sourceTree = "<group>"; };
 		EC28D04815E9654C004EA7D9 /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
 		EC28D04A15E9691B004EA7D9 /* Logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-small.png"; sourceTree = "<group>"; };
+		EC28D05015E96EB9004EA7D9 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		EC28D05115E96EB9004EA7D9 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
+		EC28D05215E96EB9004EA7D9 /* AddItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddItemViewController.xib; sourceTree = "<group>"; };
 		EC82905815E9336F007A2732 /* UserSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsTableViewController.h; sourceTree = "<group>"; };
 		EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsTableViewController.m; sourceTree = "<group>"; };
 		EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingsTableViewController.xib; sourceTree = "<group>"; };
@@ -291,6 +296,9 @@
 		764E0FDC15E922F80068252B /* Add a Wanted Item */ = {
 			isa = PBXGroup;
 			children = (
+				EC28D05015E96EB9004EA7D9 /* AddItemViewController.h */,
+				EC28D05115E96EB9004EA7D9 /* AddItemViewController.m */,
+				EC28D05215E96EB9004EA7D9 /* AddItemViewController.xib */,
 			);
 			name = "Add a Wanted Item";
 			sourceTree = "<group>";
@@ -436,6 +444,7 @@
 				76DB681A15E94FA500E1CDC6 /* icon@2x.png in Resources */,
 				EC28D04915E9654C004EA7D9 /* 111-user.png in Resources */,
 				EC28D04B15E9691B004EA7D9 /* Logo-small.png in Resources */,
+				EC28D05415E96EB9004EA7D9 /* AddItemViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +464,7 @@
 				EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */,
 				7608FF4B15E937D0004971BF /* DIYTabViewController.m in Sources */,
 				EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */,
+				EC28D05315E96EB9004EA7D9 /* AddItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

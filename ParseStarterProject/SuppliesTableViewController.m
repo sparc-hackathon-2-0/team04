@@ -46,7 +46,9 @@
     [super viewDidLoad];
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Anyone have?" style:UIBarButtonItemStylePlain target:self action:@selector(refreshPropertyList:)];
     [anotherButton setTintColor:[UIColor grayColor]];
+    [anotherButton setAction:@selector(buttonPressed)];
     self.navigationItem.rightBarButtonItem = anotherButton;
+    
     [anotherButton release];
     
     //self.navigationItem.title = @"Supplies";
@@ -207,6 +209,13 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+}
+     
+-(void)buttonPressed {
+    NSLog(@"Button Pressed!");
+    AddItemViewController *vc = [[AddItemViewController alloc]init];
+    [self.navigationController  presentModalViewController:vc animated:YES  ];
+    [vc release];
 }
 
 @end
