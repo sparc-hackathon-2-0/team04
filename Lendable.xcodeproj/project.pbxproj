@@ -36,10 +36,8 @@
 		764E0EF315E311720068252B /* DIYCategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0EF215E311720068252B /* DIYCategoriesTableViewController.m */; };
 		764E0FE315E9239C0068252B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE215E9239C0068252B /* LoginViewController.xib */; };
 		764E0FE515E923B30068252B /* NewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE415E923B30068252B /* NewUserViewController.xib */; };
-		764E0FE715E923D60068252B /* SearchDIYItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE615E923D60068252B /* SearchDIYItemsViewController.xib */; };
 		764E0FE915E923F40068252B /* DIYCategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE815E923F40068252B /* DIYCategoriesViewController.xib */; };
 		764E0FEB15E924180068252B /* DIYLessonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FEA15E924180068252B /* DIYLessonsViewController.xib */; };
-		764E0FED15E924250068252B /* DIYLessonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FEC15E924250068252B /* DIYLessonViewController.xib */; };
 		764E0FEF15E9243C0068252B /* WantedItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FEE15E9243C0068252B /* WantedItemViewController.xib */; };
 		764E0FF115E924540068252B /* WantedItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FF015E924540068252B /* WantedItemsViewController.xib */; };
 		764E0FF315E9246D0068252B /* AddWantedItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FF215E9246C0068252B /* AddWantedItemViewController.xib */; };
@@ -49,6 +47,10 @@
 		764E0FFF15E926070068252B /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0FFD15E926070068252B /* NewUserViewController.m */; };
 		764E100215E9266B0068252B /* just_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764E100115E9266B0068252B /* just_background@2x.png */; };
 		76986FF015E968450052EC45 /* DIYLessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76986FEF15E968450052EC45 /* DIYLessonsViewController.m */; };
+		76986FFC15E97DBA0052EC45 /* DIYSearchLessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76986FFA15E97DBA0052EC45 /* DIYSearchLessonsViewController.m */; };
+		76986FFD15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76986FFB15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib */; };
+		7698700115E980E20052EC45 /* DIYLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76986FFF15E980E20052EC45 /* DIYLessonViewController.m */; };
+		7698700215E980E20052EC45 /* DIYLessonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7698700015E980E20052EC45 /* DIYLessonViewController.xib */; };
 		76DB681715E94F2D00E1CDC6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681615E94F2D00E1CDC6 /* icon.png */; };
 		76DB681A15E94FA500E1CDC6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681915E94FA500E1CDC6 /* icon@2x.png */; };
 		EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */; };
@@ -97,10 +99,8 @@
 		764E0EF215E311720068252B /* DIYCategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYCategoriesTableViewController.m; sourceTree = "<group>"; };
 		764E0FE215E9239C0068252B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		764E0FE415E923B30068252B /* NewUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUserViewController.xib; sourceTree = "<group>"; };
-		764E0FE615E923D60068252B /* SearchDIYItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchDIYItemsViewController.xib; sourceTree = "<group>"; };
 		764E0FE815E923F40068252B /* DIYCategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYCategoriesViewController.xib; sourceTree = "<group>"; };
 		764E0FEA15E924180068252B /* DIYLessonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYLessonsViewController.xib; sourceTree = "<group>"; };
-		764E0FEC15E924250068252B /* DIYLessonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYLessonViewController.xib; sourceTree = "<group>"; };
 		764E0FEE15E9243C0068252B /* WantedItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WantedItemViewController.xib; sourceTree = "<group>"; };
 		764E0FF015E924540068252B /* WantedItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WantedItemsViewController.xib; sourceTree = "<group>"; };
 		764E0FF215E9246C0068252B /* AddWantedItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWantedItemViewController.xib; sourceTree = "<group>"; };
@@ -113,6 +113,12 @@
 		764E100115E9266B0068252B /* just_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "just_background@2x.png"; sourceTree = "<group>"; };
 		76986FEE15E968450052EC45 /* DIYLessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYLessonsViewController.h; sourceTree = "<group>"; };
 		76986FEF15E968450052EC45 /* DIYLessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYLessonsViewController.m; sourceTree = "<group>"; };
+		76986FF915E97DBA0052EC45 /* DIYSearchLessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYSearchLessonsViewController.h; sourceTree = "<group>"; };
+		76986FFA15E97DBA0052EC45 /* DIYSearchLessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYSearchLessonsViewController.m; sourceTree = "<group>"; };
+		76986FFB15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYSearchLessonsViewController.xib; sourceTree = "<group>"; };
+		76986FFE15E980E20052EC45 /* DIYLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYLessonViewController.h; sourceTree = "<group>"; };
+		76986FFF15E980E20052EC45 /* DIYLessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYLessonViewController.m; sourceTree = "<group>"; };
+		7698700015E980E20052EC45 /* DIYLessonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYLessonViewController.xib; sourceTree = "<group>"; };
 		76DB681615E94F2D00E1CDC6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		76DB681915E94FA500E1CDC6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		EC28D04415E960A3004EA7D9 /* SuppliesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuppliesTableViewController.h; sourceTree = "<group>"; };
@@ -264,6 +270,8 @@
 		764E0FD815E922740068252B /* DIY Search */ = {
 			isa = PBXGroup;
 			children = (
+				76986FF915E97DBA0052EC45 /* DIYSearchLessonsViewController.h */,
+				76986FFA15E97DBA0052EC45 /* DIYSearchLessonsViewController.m */,
 			);
 			name = "DIY Search";
 			sourceTree = "<group>";
@@ -280,6 +288,9 @@
 		764E0FDA15E922C90068252B /* DIY Lesson */ = {
 			isa = PBXGroup;
 			children = (
+				76986FFE15E980E20052EC45 /* DIYLessonViewController.h */,
+				76986FFF15E980E20052EC45 /* DIYLessonViewController.m */,
+				7698700015E980E20052EC45 /* DIYLessonViewController.xib */,
 			);
 			name = "DIY Lesson";
 			sourceTree = "<group>";
@@ -334,12 +345,11 @@
 		764E0FE115E923510068252B /* XIB Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76986FFB15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib */,
 				764E0FE215E9239C0068252B /* LoginViewController.xib */,
 				764E0FE415E923B30068252B /* NewUserViewController.xib */,
-				764E0FE615E923D60068252B /* SearchDIYItemsViewController.xib */,
 				764E0FE815E923F40068252B /* DIYCategoriesViewController.xib */,
 				764E0FEA15E924180068252B /* DIYLessonsViewController.xib */,
-				764E0FEC15E924250068252B /* DIYLessonViewController.xib */,
 				764E0FEE15E9243C0068252B /* WantedItemViewController.xib */,
 				764E0FF015E924540068252B /* WantedItemsViewController.xib */,
 				764E0FF215E9246C0068252B /* AddWantedItemViewController.xib */,
@@ -418,10 +428,8 @@
 				09144A7313C2997E00388B00 /* Entitlements.plist in Resources */,
 				764E0FE315E9239C0068252B /* LoginViewController.xib in Resources */,
 				764E0FE515E923B30068252B /* NewUserViewController.xib in Resources */,
-				764E0FE715E923D60068252B /* SearchDIYItemsViewController.xib in Resources */,
 				764E0FE915E923F40068252B /* DIYCategoriesViewController.xib in Resources */,
 				764E0FEB15E924180068252B /* DIYLessonsViewController.xib in Resources */,
-				764E0FED15E924250068252B /* DIYLessonViewController.xib in Resources */,
 				764E0FEF15E9243C0068252B /* WantedItemViewController.xib in Resources */,
 				764E0FF115E924540068252B /* WantedItemsViewController.xib in Resources */,
 				764E0FF315E9246D0068252B /* AddWantedItemViewController.xib in Resources */,
@@ -441,6 +449,8 @@
 				76DB681A15E94FA500E1CDC6 /* icon@2x.png in Resources */,
 				EC28D04915E9654C004EA7D9 /* 111-user.png in Resources */,
 				EC28D04B15E9691B004EA7D9 /* Logo-small.png in Resources */,
+				76986FFD15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib in Resources */,
+				7698700215E980E20052EC45 /* DIYLessonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +471,8 @@
 				7608FF4B15E937D0004971BF /* DIYTabViewController.m in Sources */,
 				EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */,
 				76986FF015E968450052EC45 /* DIYLessonsViewController.m in Sources */,
+				76986FFC15E97DBA0052EC45 /* DIYSearchLessonsViewController.m in Sources */,
+				7698700115E980E20052EC45 /* DIYLessonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

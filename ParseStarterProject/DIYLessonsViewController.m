@@ -7,6 +7,7 @@
 //
 
 #import "DIYLessonsViewController.h"
+#import "DIYLessonViewController.h"
 #import "Parse/Parse.h"
 
 @implementation DIYLessonsViewController
@@ -242,8 +243,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog([NSString stringWithFormat:@"row: %d", indexPath.row ]);
-    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    PFObject *lesson = [self objectAtIndexPath:indexPath];
+    
+    DIYLessonViewController *lessonViewController = [[[DIYLessonViewController alloc] initWithLesson:lesson] autorelease];
+    // Push it onto the top of the navigation controller's stack
+    [[self navigationController] pushViewController:lessonViewController animated:YES];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:FALSE];
 }
 
 @end
