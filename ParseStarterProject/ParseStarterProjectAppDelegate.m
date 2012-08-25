@@ -31,27 +31,32 @@
     // Override point for customization after application launch.
     
     ParseTableController *controller1 = [[ParseTableController alloc] initWithClassName:@"DIYcategories"];
-    ParseTableController *controller2 = [[ParseTableController alloc] initWithClassName:@"Yardsaless"];
-    ParseTableController *controller3 = [[ParseTableController alloc] initWithClassName:@"Yardsales"];
+    SuppliesTableViewController *controller2 = [[SuppliesTableViewController alloc] initWithClassName:@"Supplies"];
     UIViewController *controller4 = [[UIViewController alloc] init];
     //Setup tab bar controller
        
     DIYTabViewController *tabBarController = [[DIYTabViewController alloc]init];
     
     UINavigationController *ideaNavController = [[UINavigationController alloc]initWithRootViewController:controller1];
-    ideaNavController.navigationBar.tintColor = [UIColor blackColor];
     ideaNavController.title = @"Ideas";
     ideaNavController.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Ideas" image:[UIImage imageNamed:@"84-lightbulb.png"] tag:1];
     
+    
     UINavigationController *findToolsNav = [[UINavigationController alloc]initWithRootViewController:controller2];
-    ideaNavController.navigationBar.tintColor = [UIColor blackColor];
-    findToolsNav.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Find Tools" image:[UIImage imageNamed:@"181-hammer.png"] tag:2];
+    findToolsNav.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Supplies" image:[UIImage imageNamed:@"181-hammer.png"] tag:2];
     
-    UINavigationController *navController3 = [[UINavigationController alloc]initWithRootViewController:controller3];
-    UINavigationController *navController4 = [[UINavigationController alloc]initWithRootViewController:controller4];
+    UINavigationController *profileNav = [[UINavigationController alloc]initWithRootViewController:controller4];
+    profileNav.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Profile" image:[UIImage imageNamed:@"111-user.png"] tag:2];
     
-    NSArray *viewControllers = [NSArray arrayWithObjects:ideaNavController, findToolsNav, navController3, navController4, nil];
+    NSArray *viewControllers = [NSArray arrayWithObjects:ideaNavController, findToolsNav, profileNav, nil];
     //[navController release];
+    
+    //sets default navbar color for all bars
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    
+    //[imageView release];
+    
+    //[[UINavigationBar appearance] setTitleView:imageView];
     
     [tabBarController setViewControllers:viewControllers];
       

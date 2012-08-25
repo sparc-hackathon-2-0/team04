@@ -50,6 +50,8 @@
 		764E100215E9266B0068252B /* just_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764E100115E9266B0068252B /* just_background@2x.png */; };
 		76DB681715E94F2D00E1CDC6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681615E94F2D00E1CDC6 /* icon.png */; };
 		76DB681A15E94FA500E1CDC6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681915E94FA500E1CDC6 /* icon@2x.png */; };
+		EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */; };
+		EC28D04915E9654C004EA7D9 /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = EC28D04815E9654C004EA7D9 /* 111-user.png */; };
 		EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */; };
 		EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */; };
 		EC82905F15E94A7D007A2732 /* 84-lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82905E15E94A7D007A2732 /* 84-lightbulb.png */; };
@@ -109,6 +111,9 @@
 		764E100115E9266B0068252B /* just_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "just_background@2x.png"; sourceTree = "<group>"; };
 		76DB681615E94F2D00E1CDC6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		76DB681915E94FA500E1CDC6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		EC28D04415E960A3004EA7D9 /* SuppliesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuppliesTableViewController.h; sourceTree = "<group>"; };
+		EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuppliesTableViewController.m; sourceTree = "<group>"; };
+		EC28D04815E9654C004EA7D9 /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
 		EC82905815E9336F007A2732 /* UserSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsTableViewController.h; sourceTree = "<group>"; };
 		EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsTableViewController.m; sourceTree = "<group>"; };
 		EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingsTableViewController.xib; sourceTree = "<group>"; };
@@ -275,6 +280,8 @@
 		764E0FDB15E922DB0068252B /* List of Wanted Items */ = {
 			isa = PBXGroup;
 			children = (
+				EC28D04415E960A3004EA7D9 /* SuppliesTableViewController.h */,
+				EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */,
 			);
 			name = "List of Wanted Items";
 			sourceTree = "<group>";
@@ -338,6 +345,7 @@
 		764E100015E926440068252B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				EC28D04815E9654C004EA7D9 /* 111-user.png */,
 				7608FF4E15E94379004971BF /* Logo.png */,
 				EC82906015E94AF9007A2732 /* 181-hammer.png */,
 				EC82905E15E94A7D007A2732 /* 84-lightbulb.png */,
@@ -423,6 +431,7 @@
 				EC82906115E94AF9007A2732 /* 181-hammer.png in Resources */,
 				76DB681715E94F2D00E1CDC6 /* icon.png in Resources */,
 				76DB681A15E94FA500E1CDC6 /* icon@2x.png in Resources */,
+				EC28D04915E9654C004EA7D9 /* 111-user.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +450,7 @@
 				764E0FFF15E926070068252B /* NewUserViewController.m in Sources */,
 				EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */,
 				7608FF4B15E937D0004971BF /* DIYTabViewController.m in Sources */,
+				EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
