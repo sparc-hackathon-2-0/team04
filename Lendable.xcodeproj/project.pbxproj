@@ -33,7 +33,7 @@
 		7608FF5315E94951004971BF /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF5215E94951004971BF /* Login.png */; };
 		7608FF5515E949C9004971BF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF5415E949C9004971BF /* Default@2x.png */; };
 		7608FF5715E949F9004971BF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7608FF5615E949F9004971BF /* Default.png */; };
-		764E0EF315E311720068252B /* ParseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0EF215E311720068252B /* ParseTableController.m */; };
+		764E0EF315E311720068252B /* DIYCategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E0EF215E311720068252B /* DIYCategoriesTableViewController.m */; };
 		764E0FE315E9239C0068252B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE215E9239C0068252B /* LoginViewController.xib */; };
 		764E0FE515E923B30068252B /* NewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE415E923B30068252B /* NewUserViewController.xib */; };
 		764E0FE715E923D60068252B /* SearchDIYItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764E0FE615E923D60068252B /* SearchDIYItemsViewController.xib */; };
@@ -92,8 +92,8 @@
 		7608FF5215E94951004971BF /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
 		7608FF5415E949C9004971BF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7608FF5615E949F9004971BF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		764E0EF115E311720068252B /* ParseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTableController.h; sourceTree = "<group>"; };
-		764E0EF215E311720068252B /* ParseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseTableController.m; sourceTree = "<group>"; };
+		764E0EF115E311720068252B /* DIYCategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYCategoriesTableViewController.h; sourceTree = "<group>"; };
+		764E0EF215E311720068252B /* DIYCategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYCategoriesTableViewController.m; sourceTree = "<group>"; };
 		764E0FE215E9239C0068252B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		764E0FE415E923B30068252B /* NewUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUserViewController.xib; sourceTree = "<group>"; };
 		764E0FE615E923D60068252B /* SearchDIYItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchDIYItemsViewController.xib; sourceTree = "<group>"; };
@@ -198,8 +198,6 @@
 				09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */,
 				09ABC08913A1D52E009C3FCF /* ParseStarterProjectViewController.xib */,
 				09ABC07813A1D52D009C3FCF /* Supporting Files */,
-				764E0EF115E311720068252B /* ParseTableController.h */,
-				764E0EF215E311720068252B /* ParseTableController.m */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -254,6 +252,8 @@
 		764E0FD715E922620068252B /* DIY Categories */ = {
 			isa = PBXGroup;
 			children = (
+				764E0EF115E311720068252B /* DIYCategoriesTableViewController.h */,
+				764E0EF215E311720068252B /* DIYCategoriesTableViewController.m */,
 			);
 			name = "DIY Categories";
 			sourceTree = "<group>";
@@ -449,7 +449,7 @@
 				09ABC07F13A1D52D009C3FCF /* main.m in Sources */,
 				09ABC08213A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m in Sources */,
 				09ABC08813A1D52E009C3FCF /* ParseStarterProjectViewController.m in Sources */,
-				764E0EF315E311720068252B /* ParseTableController.m in Sources */,
+				764E0EF315E311720068252B /* DIYCategoriesTableViewController.m in Sources */,
 				764E0FFE15E926070068252B /* LoginViewController.m in Sources */,
 				764E0FFF15E926070068252B /* NewUserViewController.m in Sources */,
 				EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */,

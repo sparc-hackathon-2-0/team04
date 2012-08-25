@@ -3,7 +3,7 @@
 #import "Parse/Parse.h"
 #import "ParseStarterProjectAppDelegate.h"
 #import "ParseStarterProjectViewController.h"
-#import "ParseTableController.h"
+#import "DIYCategoriesTableViewController.h"
 #import "DIYTabViewController.h"
 
 @implementation ParseStarterProjectAppDelegate
@@ -30,7 +30,7 @@
     
     // Override point for customization after application launch.
     
-    ParseTableController *controller1 = [[ParseTableController alloc] initWithClassName:@"DIYcategories"];
+    DIYCategoriesTableViewController *controller1 = [[DIYCategoriesTableViewController alloc] initWithClassName:@"DIYcategories"];
     SuppliesTableViewController *controller2 = [[SuppliesTableViewController alloc] initWithClassName:@"Supplies"];
     UserSettingsTableViewController *controller4 = [[UserSettingsTableViewController alloc] init];
     //Setup tab bar controller
