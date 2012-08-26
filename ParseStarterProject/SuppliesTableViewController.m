@@ -201,22 +201,27 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    
+    ItemDetailViewController *detailViewController = [[[ItemDetailViewController alloc] initWithIndex:indexPath] autorelease];
+    // Push it onto the top of the navigation controller's stack
+    [[self navigationController] pushViewController:detailViewController animated:YES];
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:FALSE];
 }
      
 -(void)buttonPressed {
     NSLog(@"Button Pressed!");
     AddItemViewController *vc = [[AddItemViewController alloc]init];
-    [self.navigationController  presentModalViewController:vc animated:YES  ];
     
+    [self.navigationController  presentModalViewController:vc animated:YES  ];
+    vc.delegate = self;
     [vc release];
+}
+
+-(void)SuppliesAdded{
+    NSLog(@"try to reload table");
+    
+    [self loadObjects];
 }
 
 @end

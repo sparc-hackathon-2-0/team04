@@ -17,6 +17,7 @@
 @synthesize submitButton;
 @synthesize descriptionTextField;
 @synthesize aTextField;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,6 +66,10 @@
     [newSupplies setObject:descriptionTextField.text forKey:@"description"];
     [newSupplies setObject:user forKey: @"created_by"];
     [newSupplies saveInBackground];
+    
+        [delegate SuppliesAdded];
+    
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 

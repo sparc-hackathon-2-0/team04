@@ -62,6 +62,8 @@
 		EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */; };
 		EC82905F15E94A7D007A2732 /* 84-lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82905E15E94A7D007A2732 /* 84-lightbulb.png */; };
 		EC82906115E94AF9007A2732 /* 181-hammer.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82906015E94AF9007A2732 /* 181-hammer.png */; };
+		EC84B83715E996D300C06A20 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC84B83515E996D300C06A20 /* ItemDetailViewController.m */; };
+		EC84B83815E996D300C06A20 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC84B83615E996D300C06A20 /* ItemDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +137,9 @@
 		EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingsTableViewController.xib; sourceTree = "<group>"; };
 		EC82905E15E94A7D007A2732 /* 84-lightbulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "84-lightbulb.png"; sourceTree = "<group>"; };
 		EC82906015E94AF9007A2732 /* 181-hammer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "181-hammer.png"; sourceTree = "<group>"; };
+		EC84B83415E996D300C06A20 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		EC84B83515E996D300C06A20 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		EC84B83615E996D300C06A20 /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +327,9 @@
 		764E0FDD15E923020068252B /* View Wanted Item */ = {
 			isa = PBXGroup;
 			children = (
+				EC84B83415E996D300C06A20 /* ItemDetailViewController.h */,
+				EC84B83515E996D300C06A20 /* ItemDetailViewController.m */,
+				EC84B83615E996D300C06A20 /* ItemDetailViewController.xib */,
 			);
 			name = "View Wanted Item";
 			sourceTree = "<group>";
@@ -460,6 +468,7 @@
 				EC28D05415E96EB9004EA7D9 /* AddItemViewController.xib in Resources */,
 				76986FFD15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib in Resources */,
 				7698700215E980E20052EC45 /* DIYLessonViewController.xib in Resources */,
+				EC84B83815E996D300C06A20 /* ItemDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +492,7 @@
 				76986FF015E968450052EC45 /* DIYLessonsViewController.m in Sources */,
 				76986FFC15E97DBA0052EC45 /* DIYSearchLessonsViewController.m in Sources */,
 				7698700115E980E20052EC45 /* DIYLessonViewController.m in Sources */,
+				EC84B83715E996D300C06A20 /* ItemDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

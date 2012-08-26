@@ -37,6 +37,9 @@
     
     controller1.pullToRefreshEnabled = NO;
     
+    [[UIApplication sharedApplication]
+       setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
+    
     SuppliesTableViewController *controller2 = [[SuppliesTableViewController alloc] initWithClassName:@"Supplies"];
     UserSettingsTableViewController *controller4 = [[UserSettingsTableViewController alloc] init];
     //Setup tab bar controller
