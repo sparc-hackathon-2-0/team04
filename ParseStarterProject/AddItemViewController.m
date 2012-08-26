@@ -65,6 +65,11 @@
     [newSupplies setObject:aTextField.text forKey:@"title"];
     [newSupplies setObject:descriptionTextField.text forKey:@"description"];
     [newSupplies setObject:user forKey: @"created_by"];
+    
+    PFACL *postACL = [PFACL ACLWithUser:user];
+    [postACL setPublicReadAccess:YES];
+    newSupplies.ACL = postACL;
+    
     [newSupplies saveInBackground];
     
         [delegate SuppliesAdded];

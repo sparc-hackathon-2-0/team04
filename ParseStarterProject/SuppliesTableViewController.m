@@ -155,6 +155,10 @@
     //cell.textLabel.text = [dateFormatter stringFromDate:[object objectForKey:@"title"]];
     cell.textLabel.text = [object objectForKey:@"title"];
     
+    PFUser *user = [object objectForKey:@"created_by"];
+    
+    cell.detailTextLabel.text = @"Created by: jmayhak";
+    
     return cell;
 }
 

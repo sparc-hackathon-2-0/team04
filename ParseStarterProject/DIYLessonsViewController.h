@@ -10,7 +10,7 @@
 
 @interface DIYLessonsViewController : PFQueryTableViewController
 
-@property (atomic, assign) NSObject *category;
+@property (atomic, assign) PFObject *category;
 
 -(id) initWithIndex:(NSIndexPath*)index;
 

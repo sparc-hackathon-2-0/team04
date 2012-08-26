@@ -41,6 +41,8 @@
         NSString *title = [supply objectForKey:@"title"];
         
         self.title = title;
+        
+        self.supply = supply;
     }
     self.supply = supply;
     return self;
@@ -58,12 +60,7 @@
     description.numberOfLines = 0;
     [description sizeToFit];
     
-//    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Request" style:UIBarButtonItemStylePlain target:self action:@selector(showPopup)];
-//    [anotherButton setTintColor:[UIColor grayColor]];
-//    [anotherButton setAction:@selector(buttonPressed)];
-//    self.navigationItem.rightBarButtonItem = anotherButton;
-//    
-//    [anotherButton release];
+
     
     // Do any additional setup after loading the view from its nib.
 }
