@@ -17,6 +17,7 @@
 @synthesize submitButton;
 @synthesize descriptionTextField;
 @synthesize aTextField;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,7 +59,18 @@
     [self.view endEditing:TRUE];
 }
 - (IBAction)submitButtonPressed2:(id)sender {
-    NSLog(@"submit");
+    PFUser *user = [PFUser currentUser];
+    PFObject *newSupplies = [PFObject objectWithClassName:@"Supplies"];
+    
+    [newSupplies setObject:aTextField.text forKey:@"title"];
+    [newSupplies setObject:descriptionTextField.text forKey:@"description"];
+    [newSupplies setObject:user forKey: @"created_by"];
+    [newSupplies saveInBackground];
+    
+        [delegate SuppliesAdded];
+    
+    
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 
