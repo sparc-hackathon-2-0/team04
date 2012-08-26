@@ -79,9 +79,45 @@
 - (IBAction)logout:(id)sender {
     [PFUser logOut];
     
-    DIYCategoriesTableViewController *detailViewController = [[[DIYCategoriesTableViewController alloc] init] autorelease];
-    // Push it onto the top of the navigation controller's stack
-    [[self navigationController] pushViewController:detailViewController animated:YES];
+    if (![PFUser currentUser]) {
+        // Create the log in view controller
+        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+        [logInViewController setDelegate:self]; // Set ourselves as the delegate
+        
+        [logInViewController.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Login.png"]]];
+        
+        logInViewController.logInView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"just_background@2x.png"]];
+        logInViewController.logInView.usernameField.backgroundColor = [UIColor blackColor];
+        logInViewController.logInView.passwordField.backgroundColor = [UIColor blackColor];
+        
+        // Create the sign up view controller
+        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+        
+        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+        
+        [signUpViewController.signUpView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SignUp.png"]]];
+        
+        signUpViewController.signUpView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"just_background@2x.png"]];
+        signUpViewController.signUpView.usernameField.backgroundColor = [UIColor blackColor];
+        signUpViewController.signUpView.passwordField.backgroundColor = [UIColor blackColor];
+        signUpViewController.signUpView.emailField.backgroundColor = [UIColor blackColor];
+        signUpViewController.signUpView.additionalField.placeholder = @"Phone Number";
+        signUpViewController.signUpView.additionalField.backgroundColor = [UIColor blackColor];
+        
+        // Assign our sign up controller to be displayed from the login controller
+        [logInViewController setSignUpController:signUpViewController];
+        
+        // Present the log in view controller
+        [self presentViewController:logInViewController animated:YES completion:NULL];
+    }
+}
+
+- (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
+    [self dismissModalViewControllerAnimated:YES]; // Dismiss the PFSignUpViewController
+}
+
+- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)viewDidUnload
