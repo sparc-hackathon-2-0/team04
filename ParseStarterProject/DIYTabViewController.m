@@ -45,6 +45,7 @@
         
         // Create the sign up view controller
         PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+                
         [signUpViewController setDelegate:self]; // Set ourselves as the delegate
         
         [signUpViewController.signUpView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SignUp.png"]]];
@@ -53,6 +54,8 @@
         signUpViewController.signUpView.usernameField.backgroundColor = [UIColor blackColor];
         signUpViewController.signUpView.passwordField.backgroundColor = [UIColor blackColor];
         signUpViewController.signUpView.emailField.backgroundColor = [UIColor blackColor];
+        signUpViewController.signUpView.additionalField.placeholder = @"Phone Number";
+        signUpViewController.signUpView.additionalField.backgroundColor = [UIColor blackColor];
         
         // Assign our sign up controller to be displayed from the login controller
         [logInViewController setSignUpController:signUpViewController];
