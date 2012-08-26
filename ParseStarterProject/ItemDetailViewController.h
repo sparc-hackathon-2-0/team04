@@ -13,4 +13,5 @@
 @property (retain, nonatomic) IBOutlet UILabel *titlex;
 @property (retain, nonatomic) IBOutlet UILabel *description;
 - (id)initWithSupply:(PFObject*)supply;
+@property (atomic, assign) PFObject *supply;
 @end

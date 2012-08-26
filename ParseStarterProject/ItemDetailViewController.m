@@ -40,6 +40,8 @@
         NSString *title = [supply objectForKey:@"title"];
         
         self.title = title;
+        
+        self.supply = supply;
     }
     
     return self;
@@ -52,6 +54,12 @@
     description.lineBreakMode = UILineBreakModeWordWrap;
     description.numberOfLines = 0;
     [description sizeToFit];
+    
+    // is the logged user == the user w/ this supply' user
+    
+    // else
+    
+    
     
     // Do any additional setup after loading the view from its nib.
 }
