@@ -15,6 +15,7 @@
 @implementation ItemDetailViewController
 @synthesize titlex;
 @synthesize description;
+@synthesize supply;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,7 +42,7 @@
         
         self.title = title;
     }
-    
+    self.supply = supply;
     return self;
 }
 
@@ -49,11 +50,32 @@
 {
     [super viewDidLoad];
     
+    
+    
+    //titlex.text = [supply objectForKey:@"title"];
+    description.text = [supply objectForKey:@"description"];
     description.lineBreakMode = UILineBreakModeWordWrap;
     description.numberOfLines = 0;
     [description sizeToFit];
     
+//    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Request" style:UIBarButtonItemStylePlain target:self action:@selector(showPopup)];
+//    [anotherButton setTintColor:[UIColor grayColor]];
+//    [anotherButton setAction:@selector(buttonPressed)];
+//    self.navigationItem.rightBarButtonItem = anotherButton;
+//    
+//    [anotherButton release];
+    
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)showPopup{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+                                                    message:@"You must be connected to the internet to use this app."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    [alert release];
 }
 
 - (void)viewDidUnload
