@@ -201,8 +201,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    PFObject *item = [self objectAtIndexPath:indexPath];
     
-    ItemDetailViewController *detailViewController = [[[ItemDetailViewController alloc] initWithIndex:indexPath] autorelease];
+
+    ItemDetailViewController *detailViewController = [[[ItemDetailViewController alloc] initWithSupply:item] autorelease];
     // Push it onto the top of the navigation controller's stack
     [[self navigationController] pushViewController:detailViewController animated:YES];
     
