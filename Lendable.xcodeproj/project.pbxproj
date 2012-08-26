@@ -51,6 +51,8 @@
 		76986FFD15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76986FFB15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib */; };
 		7698700115E980E20052EC45 /* DIYLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76986FFF15E980E20052EC45 /* DIYLessonViewController.m */; };
 		7698700215E980E20052EC45 /* DIYLessonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7698700015E980E20052EC45 /* DIYLessonViewController.xib */; };
+		7698700B15E991D40052EC45 /* UserSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7698700915E991D40052EC45 /* UserSettingsTableViewController.m */; };
+		7698700C15E991D40052EC45 /* UserSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7698700A15E991D40052EC45 /* UserSettingsTableViewController.xib */; };
 		76DB681715E94F2D00E1CDC6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681615E94F2D00E1CDC6 /* icon.png */; };
 		76DB681A15E94FA500E1CDC6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DB681915E94FA500E1CDC6 /* icon@2x.png */; };
 		EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28D04515E960A3004EA7D9 /* SuppliesTableViewController.m */; };
@@ -58,8 +60,6 @@
 		EC28D04B15E9691B004EA7D9 /* Logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = EC28D04A15E9691B004EA7D9 /* Logo-small.png */; };
 		EC28D05315E96EB9004EA7D9 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28D05115E96EB9004EA7D9 /* AddItemViewController.m */; };
 		EC28D05415E96EB9004EA7D9 /* AddItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC28D05215E96EB9004EA7D9 /* AddItemViewController.xib */; };
-		EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */; };
-		EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */; };
 		EC82905F15E94A7D007A2732 /* 84-lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82905E15E94A7D007A2732 /* 84-lightbulb.png */; };
 		EC82906115E94AF9007A2732 /* 181-hammer.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82906015E94AF9007A2732 /* 181-hammer.png */; };
 /* End PBXBuildFile section */
@@ -121,6 +121,9 @@
 		76986FFE15E980E20052EC45 /* DIYLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYLessonViewController.h; sourceTree = "<group>"; };
 		76986FFF15E980E20052EC45 /* DIYLessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYLessonViewController.m; sourceTree = "<group>"; };
 		7698700015E980E20052EC45 /* DIYLessonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYLessonViewController.xib; sourceTree = "<group>"; };
+		7698700815E991D40052EC45 /* UserSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsTableViewController.h; sourceTree = "<group>"; };
+		7698700915E991D40052EC45 /* UserSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsTableViewController.m; sourceTree = "<group>"; };
+		7698700A15E991D40052EC45 /* UserSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingsTableViewController.xib; sourceTree = "<group>"; };
 		76DB681615E94F2D00E1CDC6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		76DB681915E94FA500E1CDC6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		EC28D04415E960A3004EA7D9 /* SuppliesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuppliesTableViewController.h; sourceTree = "<group>"; };
@@ -130,9 +133,6 @@
 		EC28D05015E96EB9004EA7D9 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
 		EC28D05115E96EB9004EA7D9 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		EC28D05215E96EB9004EA7D9 /* AddItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddItemViewController.xib; sourceTree = "<group>"; };
-		EC82905815E9336F007A2732 /* UserSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsTableViewController.h; sourceTree = "<group>"; };
-		EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsTableViewController.m; sourceTree = "<group>"; };
-		EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingsTableViewController.xib; sourceTree = "<group>"; };
 		EC82905E15E94A7D007A2732 /* 84-lightbulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "84-lightbulb.png"; sourceTree = "<group>"; };
 		EC82906015E94AF9007A2732 /* 181-hammer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "181-hammer.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -329,9 +329,9 @@
 		764E0FDE15E923140068252B /* DIY Settings */ = {
 			isa = PBXGroup;
 			children = (
-				EC82905815E9336F007A2732 /* UserSettingsTableViewController.h */,
-				EC82905915E9336F007A2732 /* UserSettingsTableViewController.m */,
-				EC82905A15E9336F007A2732 /* UserSettingsTableViewController.xib */,
+				7698700815E991D40052EC45 /* UserSettingsTableViewController.h */,
+				7698700915E991D40052EC45 /* UserSettingsTableViewController.m */,
+				7698700A15E991D40052EC45 /* UserSettingsTableViewController.xib */,
 			);
 			name = "DIY Settings";
 			sourceTree = "<group>";
@@ -444,7 +444,6 @@
 				764E0FF515E9248B0068252B /* WantedItemsByOthersViewController.xib in Resources */,
 				764E0FF715E9249D0068252B /* WantedItemByOtherViewController.xib in Resources */,
 				764E100215E9266B0068252B /* just_background@2x.png in Resources */,
-				EC82905C15E9336F007A2732 /* UserSettingsTableViewController.xib in Resources */,
 				7608FF4C15E937D0004971BF /* DIYTabViewController.xib in Resources */,
 				7608FF4F15E94379004971BF /* Logo.png in Resources */,
 				7608FF5115E94891004971BF /* SignUp.png in Resources */,
@@ -460,6 +459,7 @@
 				EC28D05415E96EB9004EA7D9 /* AddItemViewController.xib in Resources */,
 				76986FFD15E97DBA0052EC45 /* DIYSearchLessonsViewController.xib in Resources */,
 				7698700215E980E20052EC45 /* DIYLessonViewController.xib in Resources */,
+				7698700C15E991D40052EC45 /* UserSettingsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,13 +476,13 @@
 				764E0EF315E311720068252B /* DIYCategoriesTableViewController.m in Sources */,
 				764E0FFE15E926070068252B /* LoginViewController.m in Sources */,
 				764E0FFF15E926070068252B /* NewUserViewController.m in Sources */,
-				EC82905B15E9336F007A2732 /* UserSettingsTableViewController.m in Sources */,
 				7608FF4B15E937D0004971BF /* DIYTabViewController.m in Sources */,
 				EC28D04615E960A3004EA7D9 /* SuppliesTableViewController.m in Sources */,
 				EC28D05315E96EB9004EA7D9 /* AddItemViewController.m in Sources */,
 				76986FF015E968450052EC45 /* DIYLessonsViewController.m in Sources */,
 				76986FFC15E97DBA0052EC45 /* DIYSearchLessonsViewController.m in Sources */,
 				7698700115E980E20052EC45 /* DIYLessonViewController.m in Sources */,
+				7698700B15E991D40052EC45 /* UserSettingsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,7 +56,10 @@
         self.className = @"DIYlesson";
         
         // Whether the built-in pagination is enabled
-        self.paginationEnabled = YES;
+        self.paginationEnabled = NO;
+        
+        // Whether the built-in pull-to-refresh is enabled
+        self.pullToRefreshEnabled = NO;
         
         // The number of objects to show per page
         self.objectsPerPage = 10;
@@ -161,12 +164,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
     cell.textLabel.text = [object objectForKey:@"title"];
+    
+    PFFile *thumbnail = [object objectForKey:@"thumbnail"];
+    cell.imageView.image = [UIImage imageNamed:@"placeholder.jpg"];
+    cell.imageView.file = thumbnail;
     
     return cell;
 }
